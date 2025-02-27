@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Button, Modal, Input } from 'antd'
-import { toast } from 'react-toastify'
 
 import {
 	useGetAllTasksQuery,
@@ -33,10 +32,8 @@ const App = () => {
 
 	const handleAdd = async () => {
 		if (!newTask.trim()) {
-			toast.warning('Input is Required')
 			return
 		}
-
 		try {
 			await addTodo({ text: newTask })
 			setNewTask('')
