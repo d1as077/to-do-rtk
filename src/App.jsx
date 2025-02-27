@@ -10,7 +10,7 @@ import {
 } from './api'
 
 // icons
-import { TbTrashX } from 'react-icons/tb'
+import { FaTrash } from 'react-icons/fa'
 import { BiEdit } from 'react-icons/bi'
 import { FaPlus } from 'react-icons/fa'
 
@@ -112,7 +112,7 @@ const App = () => {
 									danger
 									onClick={() => handleDelete(value.id)}
 								>
-									<TbTrashX />
+									<FaTrash />
 								</Button>
 							</div>
 						</div>
